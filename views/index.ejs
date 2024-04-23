@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div  class="header">
+            <div class="app-logo"><img src="/img/logo.png" class="logo-img"/></div>
+            <div class="app-title">Crud Using Express & Node</div>
+            <div class="app-create"><a href="/create" class="create-btn">+ Create</a></div>
+        </div>
+        <div class="noteslist">
+            <% if(files.length==0){ %> 
+                    <h1>No Data Found</h1>
+                <% }else{ %>
+            <% files.forEach(function(file,index){  %>
+                <div class="notes-container">
+                    <div class="file-name">
+                        <h2><%= file %></h2>
+                    </div>
+                    
+                    <!-- <div class="file-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus dolore vitae enim corrupti amet nemo. Quae praesentium minima quia deleniti veniam esse obcaecati recusandae adipisci. Debitis tempora vitae pariatur sunt!</p>
+                    </div> -->
+                    <div class="notes-option">
+                        <a href="/delete/<%= file %>" title="Delete this file ?">Delete</a>
+                        <a href="/edit/<%= file %>">Edit</a>
+                    </div>
+                </div>
+            <% }) } %>
+                
+            
+
+        </div>
+    </div>
+</body>
+</html>

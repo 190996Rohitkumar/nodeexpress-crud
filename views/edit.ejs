@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div  class="header">
+            <div class="app-logo"><img src="/img/logo.png" class="logo-img"/></div>
+            <div class="app-title">Crud Using Express & Node</div>
+            <div class="app-create"><a href="/" class="create-btn">Home</a></div>
+        </div>
+        <div class="form-container">
+            <form class="app-form" method="post" action="/edit/<%= filename%>">
+                <h1>Edit Form</h1>
+                <label>Filename:</label>
+                <input type="text" name="filename" placeholder="Enter File Name" value="<%= filename %>"/>
+                <label>Content:</label>
+                <textarea name="filecontent" placeholder="type here"><%= content %></textarea>
+                <button class="save-btn">update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

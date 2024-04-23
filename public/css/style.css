@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    height: 10vh;
+    box-shadow: 2px 4px 6px #fff;
+}
+.app-logo{
+    width: 10vw;
+    height: 100%;
+    margin: 10px 10px;
+    
+}
+.logo-img{
+   
+    height: 100%;
+}
+.app-title{
+    width: 80vw;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-left: -2em;
+}
+.app-create{
+    width: 10vw;
+}
+.create-btn{
+    width: 100%;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: none;
+    text-decoration: none;
+}
+.noteslist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.notes-container{
+    width: 20vw;
+   
+    border: 1px solid white;
+    padding: 2px;
+    box-shadow: 2px 4px 12px wheat;
+    display: flexbox;
+    flex-direction: column;
+    
+}
+.notes-option{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.notes-option a{
+    color: #fff;
+    text-decoration: none;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border: 1px solid white;
+    box-shadow: 2px 4px 6px white;
+    padding: 1em;
+    margin-top: 1rem;
+    height: 85vh;
+    
+}
+.app-form > h1{
+    text-align: center;
+}
+.app-form label{
+    font-size: large;
+    padding: 5px;
+}
+.app-form input{
+    border: none;
+    height: 3em;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.app-form textarea{
+    resize: none;
+    border-radius: 10px;
+    height: 25vh;
+    padding: 10px;
+}
+.save-btn{
+    width:10vw;
+    padding: 0.8em;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 1em;
+    background-color: rgb(38, 82, 227);
+    color: white;
+    border: none;
+    border: 10px;
+    position: absolute;
+    left: 45%;
+    top: 70vh;
+
+}
+
+@media screen and (max-width: 1080px) {
+    .app-create{
+        width: 15vw;
+    }
+}
+@media screen and (max-width: 780px) {
+    .app-create{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 520px) {
+    .app-create{
+        width: 35vw;
+    }
+}
